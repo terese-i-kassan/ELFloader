@@ -11,6 +11,7 @@ A Aroma plugin that allows for elf built with wut to be loaded on aroma. It work
 4. Converted files will be stored into "sd:/wiiu/elf/.cache"
 
 #BUILDING
+    
     docker build -t elfloader-builder .
     docker run -it --rm -v ${PWD}:/project elfloader-builder make
 
