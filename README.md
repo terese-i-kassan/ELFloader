@@ -10,3 +10,13 @@ A Aroma plugin that allows for elf built with wut to be loaded on aroma. It work
 3. When you return to your wii u menu hold down l +down + - to open up the plugin menu. Navigate to the ELFloader plugin then choose a elf file from the menu and press A. When exiting the elf file should have loaded if not its probably not built with wut or and other error has occurred and is logged at "sd:/wiiu/elfelf_loader.log"
 4. Converted files will be stored into "sd:/wiiu/elf/.cache"
 
+#BUILDING
+    docker build -t elfloader-builder .
+    docker run -it --rm -v ${PWD}:/project elfloader-builder make
+
+#LIMITS
+
+Only ELFs built with wut convert. Old libwiiu / HBL-era ELFs use a different
+memory layout and will fail with an "unsupported relocation" error (or won't run) - they need
+recompiling against wut
+
