@@ -18,6 +18,6 @@ A Aroma plugin that allows for elf built with wut to be loaded on aroma. It work
 # LIMITS
 
 Only ELFs built with wut convert. Old libwiiu / HBL-era ELFs use a different
-memory layout and will fail with an "unsupported relocation" error (or won't run) - they need
+memory layout and will fail with an "unsupported relocation" error (or won't run) they need
 recompiling against wut
 
