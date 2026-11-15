@@ -7,7 +7,7 @@ A Aroma plugin that allows for elf files built with wut to be loaded on aroma. I
 # INSTALLATION 
 1. Download the wps file from the releases and put it in the plugins folder of your sd card located in "sd:/wiiu/environments/aroma/plugins"
 2. Put your elf files into the folder "sd:/wiiu/elf" if you don't got this folder just make it. (also if you put non wut built elf files the files will not load)
-3. When you return to your wii u menu hold down L +down + - to open up the plugin menu. Navigate to the ELFloader plugin then choose a elf file from the menu and press A. When exiting the elf file should have loaded if not its probably not built with wut or and other error has occurred and is logged at "sd:/wiiu/elfelf_loader.log"
+3. When you return to your wii u menu hold down L +down + - to open up the plugin menu. Navigate to the ELFloader plugin then choose a elf file from the menu and press A. When exiting the elf file should have loaded if not its probably not built with wut or and other error has occurred and is logged at "sd:/wiiu/elf/elf_loader.log"
 4. Converted files will be stored into "sd:/wiiu/elf/.cache"
 
 # BUILDING
